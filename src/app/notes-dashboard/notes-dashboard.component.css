@@ -1,0 +1,79 @@
+.maincontent{
+    display: flex;
+    justify-content: center;
+
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid black;
+    gap: 20px;
+    margin: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: end;
+}
+.othercontent input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.note1{
+    background-color: aqua;
+    border-radius: 8px;
+    margin: 10px;
+}
+button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.maincontent{
+    background-color: rgb(30, 30, 30);
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.topnav a:hover {
+    
+    color: blue;
+}
+.topnav .title {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sidebar img{
+    width: 250px;
+    height: 300px;
+}
+.title{
+    color: white;
+}
+.othercontent h3{
+    color: white;
+    text-underline-offset: 1px white;
+}
+.title img{
+    width: 20px;
+    height: 30px;
+}

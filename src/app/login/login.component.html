@@ -1,0 +1,15 @@
+<div class="body">
+    <div class="container">
+        <div id="login-form" class="form-container active">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="login-email">Email</label>
+                <input type="text" id="login-email" name="login-email">
+                <p id="email-error"></p>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password">
+                <input routerLink="/notes-dashboard" type="submit" value="Submit">
+            </form>
+            <p class="text">Not registered yet? <button routerLink="/register" id="show-register" type="button">Sign Up</button></p>
+    </div>
+</div>
