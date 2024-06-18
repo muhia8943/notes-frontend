@@ -1,0 +1,27 @@
+<!-- login.component.html -->
+
+<div class="body">
+    <div class="container">
+        <div id="login-form" class="form-container active">
+          <h2>Login</h2>
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <label for="login-email">Email</label>
+            <input type="text" id="login-email" formControlName="email" [ngClass]="{'is-invalid': submitted && f['email'].errors}">
+            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+              <div *ngIf="f['email'].errors['required']">Email is required</div>
+              <div *ngIf="f['email'].errors['email']">Email must be a valid email address</div>
+            </div>
+            
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" formControlName="password" [ngClass]="{'is-invalid': submitted && f['password'].errors}">
+            <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+              <div *ngIf="f['password'].errors['required']">Password is required</div>
+            </div>
+            
+            <input type="submit" value="Submit">
+          </form>
+          <p class="text">Not registered yet? <button routerLink="/register" id="show-register" type="button">Sign Up</button></p>
+        </div>
+      </div>
+      
+</div>

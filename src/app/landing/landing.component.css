@@ -1,0 +1,61 @@
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.topnav a:hover {
+    
+    color: blue;
+}
+.topnav .title {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.content img{
+    height: 300px;
+    width:300px;
+}
+.notes button{
+    padding: 15px;
+    background-color: rgb(24, 72, 108);
+    border-radius: 10px;
+    border: none;
+}
+.notes button:hover{
+    color: white;
+    cursor: pointer;
+}
+.notes h1{
+    font-style: italic;
+
+}
+.notes p{
+    font-size: 20px;
+    
+}
+.last{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(30, 30, 30);
+}
